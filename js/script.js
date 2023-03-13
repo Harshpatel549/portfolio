@@ -1,4 +1,5 @@
 const links = document.querySelectorAll('#navLink');
+const sections = document.querySelectorAll('section');
 
 links.forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -13,7 +14,6 @@ links.forEach((link) => {
                 }
             }
         })
-        
     })
 })
 
@@ -37,8 +37,42 @@ form.addEventListener('submit', (e) => {
             alert(JSON.stringify(error))
         })
 })
-
+   
 window.addEventListener('scroll', (e) => {
+
+    let position = window.pageYOffset;
+
+    const getDistance = (section) => {
+        let location = 0;
+        if(section.offsetParent) {
+            do {
+                location += section.offsetTop;
+                section = section.offsetParent;
+            }while(section);
+        }
+        return location >=0 ? location : 0;
+    }
+
+    sections.forEach((section) => {
+        if(position >= getDistance(section) - 1) {
+            const id = section.getAttribute('id');
+            links.forEach((link) => {
+                const href = link.getAttribute('href');
+                if(href == `#${id}`) {
+                    link.classList.add('active');
+                }else {
+                    if(link.classList.contains('active')){
+                        link.classList.remove('active');
+                    }else {
+                        return null;
+                    }
+                }
+            })
+        }
+    })
+
+    console.log(links[0]);
+
     const arrow = document.querySelector('#top');
     if(window.pageYOffset > 550) {
         arrow.classList.remove('hide');
@@ -50,3 +84,20 @@ window.addEventListener('scroll', (e) => {
         }
     }
 })
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+links.forEach((link) => {
+    link.onclick = () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    }
+})
+
+
