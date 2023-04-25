@@ -71,8 +71,6 @@ window.addEventListener('scroll', (e) => {
         }
     })
 
-    console.log(links[0]);
-
     const arrow = document.querySelector('#top');
     if(window.pageYOffset > 550) {
         arrow.classList.remove('hide');
