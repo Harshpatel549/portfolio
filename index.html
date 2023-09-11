@@ -1,258 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--box icons-->
-        <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-        />
+    <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        <!--custom style-->
-        <link rel="stylesheet" href="./css/style.css" />
+    <!--custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
 
-        <!--scripts-->
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script>
-        <title>Harsh Portfolio</title>
-    </head>
-    <body>
-        <!--header design-->
-        <header class="header">
-            <a href="#" class="logo">Harsh</a>
+    <!--scripts-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <title>Harsh Portfolio</title>
+  </head>
+  <body>
+    <!--header design-->
+    <header class="header">
+      <a href="#" class="logo">Harsh</a>
 
-            <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-            <nav class="navbar">
-                <a href="#home" class="active" id="navLink">home</a>
-                <a href="#about" id="navLink">about</a>
-                <a href="#skills" id="navLink">skills</a>
-                <a href="#projects" id="navLink">projects</a>
-                <a href="#contact" id="navLink">contact</a>
-            </nav>
-        </header>
+      <nav class="navbar">
+        <a href="#home" class="active" id="navLink">home</a>
+        <a href="#about" id="navLink">about</a>
+        <a href="#skills" id="navLink">skills</a>
+        <a href="#projects" id="navLink">projects</a>
+        <a href="#contact" id="navLink">contact</a>
+      </nav>
+    </header>
 
-        <!--home section-->
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Harsh Patel</h1>
-                <h3>And I'm a <span>Frontend Developer</span></h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur ab doloremque quas, deserunt asperiores porro
-                    tenetur magnam architecto eos. Optio.
-                </p>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/iamharshpatel/"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://twitter.com/patelh549"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.instagram.com/harsh_patel549/"><i class="bx bxl-instagram"></i></a>
-                </div>
-                <a href="./HarshPatel.pdf" class="btn" download>Download CV</a>
-            </div>
-
-            <div class="home-img">
-                <img src="./images/profile.png" alt="harsh patel" />
-            </div>
-        </section>
-
-        <!--about-->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="images/profile.png" alt="" />
-            </div>
-
-            <div class="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima dolores laborum quibusdam esse, voluptates incidunt
-                    accusantium excepturi maiores porro at perspiciatis
-                    distinctio placeat? Voluptas porro commodi, fuga dolorum
-                    doloribus nam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </section>
-
-        <!--skills-->
-        <section class="skills" id="skills">
-            <h2 class="heading">My <span>Skills</span></h2>
-            <div class="skills-container">
-                <div class="skills-box">
-                    <i class="bx bxl-html5" id="html"></i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-css3" id="css"></i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-javascript" id="javascript"></i>
-                    <h3>JAVASCRIPT</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-react" id="react"></i>
-                    <h3>REACT JS</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-bootstrap" id="bootstrap"></i>
-                    <h3>BOOTSTRAP</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-php" id="php"></i>
-                    <h3>PHP</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxs-file-json" id="json"></i>
-                    <h3>JSON</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-mongodb" id="mongodb"></i>
-                    <h3>MONGODB</h3>
-                </div>
-                <div class="skills-box">
-                    <i class="bx bxl-visual-studio" id="vscode"></i>
-                    <h3>VISUAL STUDIO CODE</h3>
-                </div>
-            </div>
-        </section>
-
-        <!--projects-->
-        <section class="projects" id="projects">
-            <h2 class="heading">Latest <span>Projects</span></h2>
-
-            <div class="projects-container">
-                <div class="projects-box">
-                    <img src="./images/movie.jpg" alt="" />
-                    <div class="projects-layer">
-                        <h4>Movie Land</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Cupiditate tempora nisi consectetur? Dolorum
-                            explicabo nihil dolores dignissimos quod ullam
-                            cupiditate.
-                        </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>
-                <div class="projects-box">
-                    <img src="./images/chat.jpg" alt="" />
-                    <div class="projects-layer">
-                        <h4>Chat App</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Cupiditate tempora nisi consectetur? Dolorum
-                            explicabo nihil dolores dignissimos quod ullam
-                            cupiditate.
-                        </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>
-                <div class="projects-box">
-                    <img src="./images/recipe.jpg" alt="" />
-                    <div class="projects-layer">
-                        <h4>Recipes</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Cupiditate tempora nisi consectetur? Dolorum
-                            explicabo nihil dolores dignissimos quod ullam
-                            cupiditate.
-                        </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--contact-->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span></h2>
-
-            <form action="#" id="form">
-                <div class="input-box">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Full Name"
-                        id=""
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email Address"
-                        id=""
-                    />
-                </div>
-                <div class="input-box">
-                    <input
-                        type="number"
-                        name="mobile"
-                        placeholder="Mobile Number"
-                        id=""
-                    />
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder="Email Subject"
-                        id=""
-                    />
-                </div>
-                <textarea
-                    name="message"
-                    id=""
-                    cols="30"
-                    rows="10"
-                    placeholder="Your Message"
-                ></textarea>
-                <input
-                    type="submit"
-                    id="submit"
-                    value="Send Email"
-                    class="btn"
-                />
-            </form>
-        </section>
-
-        <!--footer-->
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2023 by Harsh | All rights Reserved.</p>
-            </div>
-        </footer>
-
-        <div class="top hide" id="top">
-            <a href="#home" class="arrow"><i class="bx bx-up-arrow-alt"></i></a>
+    <!--home section-->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Harsh Patel</h1>
+        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <p>
+          2+ year of professional experience as a Front-End Web Developer with
+          experience in creating cross-browser compatible web pages using HTML5,
+          CSS3, and JavaScript.
+        </p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/iamharshpatel/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/patelh549"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/harsh_patel549/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
         </div>
-    </body>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+        <a href="./Harshpatel.pdf" class="btn" download>Download CV</a>
+      </div>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCZRf_bHnYNv6R3Y8qh3qOhmhYYHzfXFuU",
-    authDomain: "portfolio-9a151.firebaseapp.com",
-    projectId: "portfolio-9a151",
-    storageBucket: "portfolio-9a151.appspot.com",
-    messagingSenderId: "461548676225",
-    appId: "1:461548676225:web:2f905de193caa6f3129980",
-    measurementId: "G-PCP69LM279"
-  };
+      <div class="home-img">
+        <img src="./images/profile.png" alt="harsh patel" />
+      </div>
+    </section>
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-    <script src="./js/script.js"></script>
+    <!--about-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/profile.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          My expertise includes responsive web design, Bootstrap, and converting
+          design mock-ups into hand-written code. I excel in end-to-end web
+          application management, including maintenance, testing, and
+          deployment, and actively contribute to project progress through
+          iterative review meetings. My strong educational background includes a
+          post-Graduate degree in Web Design and Development with Distinction
+          and Dean's List recognition, along with a Bachelor's in Computer
+          Engineering with Distinction.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!--skills-->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class="bx bxl-html5" id="html"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-css3" id="css"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-javascript" id="javascript"></i>
+          <h3>JAVASCRIPT</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-react" id="react"></i>
+          <h3>REACT JS</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-bootstrap" id="bootstrap"></i>
+          <h3>BOOTSTRAP</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-php" id="php"></i>
+          <h3>PHP</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxs-file-json" id="json"></i>
+          <h3>JSON</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-mongodb" id="mongodb"></i>
+          <h3>MONGODB</h3>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-visual-studio" id="vscode"></i>
+          <h3>VISUAL STUDIO CODE</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--projects-->
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="./images/movie.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>Movie Land</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate tempora nisi consectetur? Dolorum explicabo nihil
+              dolores dignissimos quod ullam cupiditate.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="./images/chat.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>Chat App</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate tempora nisi consectetur? Dolorum explicabo nihil
+              dolores dignissimos quod ullam cupiditate.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="./images/recipe.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>Recipes</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate tempora nisi consectetur? Dolorum explicabo nihil
+              dolores dignissimos quod ullam cupiditate.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#" id="form">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" id="" />
+          <input type="email" name="email" placeholder="Email Address" id="" />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            name="mobile"
+            placeholder="Mobile Number"
+            id=""
+          />
+          <input type="text" name="subject" placeholder="Email Subject" id="" />
+        </div>
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" id="submit" value="Send Email" class="btn" />
+      </form>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Harsh | All rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="top hide" id="top">
+      <a href="#home" class="arrow"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCZRf_bHnYNv6R3Y8qh3qOhmhYYHzfXFuU",
+      authDomain: "portfolio-9a151.firebaseapp.com",
+      projectId: "portfolio-9a151",
+      storageBucket: "portfolio-9a151.appspot.com",
+      messagingSenderId: "461548676225",
+      appId: "1:461548676225:web:2f905de193caa6f3129980",
+      measurementId: "G-PCP69LM279",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="./js/script.js"></script>
 </html>
